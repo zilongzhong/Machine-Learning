@@ -47,7 +47,7 @@ def do_eval(sess, eval_correct, images_placeholder, labels_placeholder, data_set
     precision = true_count / num_examples
     print('Num examples: %d Num correct: %d Precision @ 1: %0.04f' % (num_examples, true_count, precision))
 
-
+# run the training part
 def run_training():
     data_sets = input_data.read_data_sets(FLAGS.train_dir, FLAGS.fake_data)
     with tf.Graph().as_default():

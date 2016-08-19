@@ -60,7 +60,7 @@ for i in range(20000):
     if i%100 == 0:
         train_accurary = accuracy.eval(feed_dict = {x:batch[0], y_:batch[1], keep_prob: 1.0})
         print("step %d, training accurary %g" % (i, train_accurary))
-    train_step.run(feed_dict = {x:batch[0], y_:batch[1], keep_prob: 0.6})
+    train_step.run(feed_dict = {x:batch[0], y_:batch[1], keep_prob: 0.5})
 
 print("test accurary %g" % accuracy.eval(feed_dict = {x:mnist.test.images, y_:mnist.test.labels, keep_prob: 1.0}))
 
