@@ -85,6 +85,7 @@ def run_training():
                 print('Test Data Eval:')
                 do_eval(sess, eval_correct, images_placeholder, labels_placeholder, data_sets.test)
 
+#main function 
 
 def main(_):
     run_training()
